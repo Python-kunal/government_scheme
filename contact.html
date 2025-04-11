@@ -60,6 +60,20 @@
       color: #007bff;
       font-weight: bold;
     }
+    .exit-button {
+      margin-top: 10px;
+      padding: 8px;
+      background-color: #e53935;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 14px;
+    }
+    .exit-button:hover {
+      background-color: #b71c1c;
+    }
   </style>
 </head>
 <body>
@@ -79,8 +93,10 @@
     </form>
     <div class="contact-info">
       <p>Or contact us directly:</p>
-      <span>📞 80811341121</span>
+      <span>📞 011-23063024</span>
     </div>
+    <!-- Exit Button -->
+    <button class="exit-button" onclick="exitPage()">Exit</button>
   </div>
 
   <script>
@@ -93,6 +109,11 @@
       alert(`Thank you, ${name}! Your message has been sent.\nWe'll contact you at ${email} soon.`);
       this.reset();
     });
+
+    function exitPage() {
+      // Redirect to the home page or desired URL
+      window.location.href = "welcome.html"; // Replace 'home.html' with the correct home page path
+    }
   </script>
 </body>
 </html>
